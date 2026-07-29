@@ -113,8 +113,14 @@
   .contact .who b{font-family:'Caveat',cursive;font-weight:700;font-size:23px;color:var(--bordeaux-deep)}
   .contact .who small{font-size:15px;color:var(--soft);letter-spacing:.4px}
 
+  .contacts.plain{margin-top:18px}
+  .contacts.plain .contact{padding:8px 22px}
+  .contacts.plain .who{text-align:center;align-items:center}
+
   @media(max-width:520px){.contacts{flex-direction:column;align-items:stretch}
-    .contact{justify-content:flex-start}}
+    .contact{justify-content:flex-start}
+    .contacts.plain{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:9px}
+    .contacts.plain .contact{flex:1 1 calc(50% - 9px);justify-content:center;padding:8px 12px}}
 
 
   .rules ul{list-style:none;margin:0;padding:0}
@@ -171,7 +177,7 @@
   <section class="intro welcome">
     <div data-i18n="welcomeText">
       <p class="hi">Holà Holà !</p>
-      <p>J'espère que vous allez bien car nous oui ! On est très contents de pouvoir bientôt passer un super week-end à vos côtés !</p>
+      <p>Nous espérons que vous allez bien car nous oui ! On est très contents de pouvoir bientôt passer un super week-end à vos côtés !</p>
       <p>Mais puisque le grand jour approche et que des petites questions d'organisation peuvent vous venir, nous avons fait ce petit site afin de vous clarifier un peu le déroulement de ces 3 jours de mariage ! 🤩</p>
       <p>S'il subsiste quelques doutes, n'hésitez pas à nous écrire directement ! Ou si vous avez des précisions à nous faire sur un sujet en particulier (la nourriture par exemple).</p>
     </div>
@@ -272,9 +278,9 @@
   <div class="day">
     <div class="day-name"><span class="ico">💍</span><span data-i18n="daySat">Samedi</span></div>
     <div class="tl">
-      <div class="ev"><div class="t" data-i18n="satE1t">8h30 – 10h30</div><div class="d" data-i18n="satE1d">Café, petit-déj &amp; jeux : spikeball, pétanque, piscine, tennis ☕🏖️</div></div>
-      <div class="ev"><div class="t" data-i18n="satE2t">Dès 10h30</div><div class="d" data-i18n="satE2d">Brunch, puis on se prépare ✨</div></div>
-      <div class="ev"><div class="t" data-i18n="satE3t">14h30</div><div class="d" data-i18n="satE3d">Rendez-vous à l'église de Tournan 💒 <small>(25 min de route 🚗)</small></div></div>
+      <div class="ev"><div class="t" data-i18n="satE1t">8h30 – 11h</div><div class="d" data-i18n="satE1d">Café, petit-déj &amp; jeux : spikeball, pétanque, piscine, tennis ☕🏖️</div></div>
+      <div class="ev"><div class="t" data-i18n="satE2t">Dès 11h</div><div class="d" data-i18n="satE2d">Brunch, puis on se prépare ✨</div></div>
+      <div class="ev"><div class="t" data-i18n="satE3t">14h30</div><div class="d" data-i18n="satE3d">Rendez-vous à l'église de Tournan 💒 <small>(25 min de route 🚗 → départ du domaine à 14h)</small></div></div>
       <div class="ev"><div class="t" data-i18n="satE4t">15h</div><div class="d" data-i18n="satE4d">Messe de mariage ⛪</div></div>
       <div class="ev"><div class="t" data-i18n="satE5t">17h30 – 18h</div><div class="d" data-i18n="satE5d">Retour au domaine : vin d'honneur → repas → on danse jusqu'au bout de la nuit 🍾💃</div></div>
     </div>
@@ -283,8 +289,8 @@
   <div class="day">
     <div class="day-name"><span class="ico">☀️</span><span data-i18n="daySun">Dimanche</span></div>
     <div class="tl">
-      <div class="ev"><div class="t" data-i18n="sunE1t">8h30 – 10h30</div><div class="d" data-i18n="sunE1d">Café, petit-déj &amp; jeux, on prolonge le plaisir ☕</div></div>
-      <div class="ev"><div class="t" data-i18n="sunE2t">Dès 11</div><div class="d" data-i18n="sunE2d">Brunch</div></div>
+      <div class="ev"><div class="t" data-i18n="sunE1t">8h30 – 11h</div><div class="d" data-i18n="sunE1d">Café, petit-déj &amp; jeux, on prolonge le plaisir ☕</div></div>
+      <div class="ev"><div class="t" data-i18n="sunE2t">Dès 11h</div><div class="d" data-i18n="sunE2d">Brunch</div></div>
       <div class="ev"><div class="t" data-i18n="sunE3t">L'après-midi</div><div class="d" data-i18n="sunE3d">Vous partez quand vous le souhaitez, on commencera à ranger vers 16h :)</div></div>
     </div>
   </div>
@@ -298,7 +304,7 @@
       <div class="t" data-i18n="packTitle">Quoi emporter</div>
       <div data-i18n="packText">
         <p>Votre maillot de bain et une tenue de sport, pour piquer une tête ou taper la balle 🏊🎾</p>
-        <p>Mi-août dans le Gers, il peut faire 35 °C l'après-midi et frais à la nuit tombée : chapeau, crème solaire, anti-moustiques et une petite laine. Petit détail, le vin d'honneur et le parking sont sur l'herbe, prévoyez des chaussures adaptées.</p>
+        <p>Mi-août dans le Gers, il peut faire 35 °C l'après-midi et frais à la nuit tombée : chapeau, crème solaire, anti-moustiques et une petite laine.</p>
       </div>
     </div>
   </section>
@@ -310,8 +316,8 @@
   </div>
   <section class="intro rules" data-i18n="rulesList">
     <ul>
+    <li><span class="ico">🥳</span><div><b>Bienveillance et bonne humeur</b> : venez le cœur léger et le sourire aux lèvres, allez vers les autres et mélangez-vous, ça va être une belle fête ! C'est le plus beau jour de notre vie et on compte sur vous pour le rendre inoubliable 😇</div></li>
     <li><span class="ico">🏊</span><div><b>La piscine</b> : pas d'alcool au bord, et on garde l'accès fermé, c'est plus sûr pour les enfants.<span class="tip">Ouverte le samedi matin et le dimanche matin.</span></div></li>
-    <li><span class="ico">🌊</span><div><b>Pas de débordement</b> : ni dans la piscine, ni ailleurs, c'est le plus beau jour de notre vie, on compte sur vous 😇</div></li>
     <li><span class="ico">🧭</span><div><b>Restez dans les parages</b> : le domaine est grand, et on a indiqué sur le plan les endroits où tout se passe. Personne n'a envie d'organiser une battue dans le Gers à 3h du matin.</div></li>
     <li><span class="ico">🚭</span><div><b>Les mégots dans les cendriers</b> : en août l'herbe est sèche comme du foin, et le brasero suffit largement à l'ambiance feu de camp.</div></li>
     <li><span class="ico">👶</span><div><b>Les enfants</b> : ils restent sous l'œil de leurs parents, surtout côté piscine et brasero.</div></li>
@@ -390,10 +396,41 @@
   </div>
   <div class="addr">
     <div class="body">
-      <h3><span class="ico">📸</span> <span data-i18n="albH3">Ajouter vos photos</span></h3>
-      <p data-i18n="albP">Un album commun pour tout rassembler : videz vos téléphones, on veut tout voir !</p>
+      <h3><span class="ico">📸</span> <span data-i18n="albH3">Ajouter vos photos, s'il vous plaît</span></h3>
+      <p data-i18n="albP">Un album commun pour tout rassembler : videz vos téléphones, on veut tout voir ! Aidez-nous à graver ces souvenirs pour toujours 🙏</p>
       <a href="https://photos.app.goo.gl/4Rbiu2PnxGSNTgrE7" target="_blank" rel="noopener" data-i18n="albA">Ouvrir l'album →</a>
     </div>
+  </div>
+
+  <div class="sec-title">
+    <h2 data-i18n="secContact">Contact</h2>
+    <div class="sub" data-i18n="secContactSub">une question, un imprévu ? appelez-nous</div>
+  </div>
+  <div class="contacts plain">
+    <a class="contact" href="tel:+33613029494">
+      <span class="who"><b>Francis</b><small>06 13 02 94 94</small></span>
+    </a>
+    <a class="contact" href="tel:+33682231038">
+      <span class="who"><b>Jean Luc</b><small>06 82 23 10 38</small></span>
+    </a>
+    <a class="contact" href="tel:+33644841157">
+      <span class="who"><b>Augustin</b><small>06 44 84 11 57</small></span>
+    </a>
+    <a class="contact" href="tel:+33766854971">
+      <span class="who"><b>Pierre</b><small>07 66 85 49 71</small></span>
+    </a>
+    <a class="contact" href="tel:+33675666093">
+      <span class="who"><b>Jean Adrien</b><small>06 75 66 60 93</small></span>
+    </a>
+    <a class="contact" href="tel:+33782667773">
+      <span class="who"><b>Guillaume</b><small>07 82 66 77 73</small></span>
+    </a>
+    <a class="contact" href="tel:+33613470126">
+      <span class="who"><b>Amelie</b><small>06 13 47 01 26</small></span>
+    </a>
+    <a class="contact" href="tel:+33617103212">
+      <span class="who"><b>Juliette</b><small>06 17 10 32 12</small></span>
+    </a>
   </div>
 
   <div class="photo closing">
@@ -407,19 +444,19 @@
 const T = {
   fr:{
     date:`Du vendredi 14 au dimanche 16 août`,
-    welcomeText:`<p class="hi">Holà Holà !</p><p>J'espère que vous allez bien car nous oui ! On est très contents de pouvoir bientôt passer un super week-end à vos côtés !</p><p>Mais puisque le grand jour approche et que des petites questions d'organisation peuvent vous venir, nous avons fait ce petit site afin de vous clarifier un peu le déroulement de ces 3 jours de mariage ! 🤩</p><p>S'il subsiste quelques doutes, n'hésitez pas à nous écrire directement ! Ou si vous avez des précisions à nous faire sur un sujet en particulier (la nourriture par exemple).</p>`,
+    welcomeText:`<p class="hi">Holà Holà !</p><p>Nous espérons que vous allez bien car nous oui ! On est très contents de pouvoir bientôt passer un super week-end à vos côtés !</p><p>Mais puisque le grand jour approche et que des petites questions d'organisation peuvent vous venir, nous avons fait ce petit site afin de vous clarifier un peu le déroulement de ces 3 jours de mariage ! 🤩</p><p>S'il subsiste quelques doutes, n'hésitez pas à nous écrire directement ! Ou si vous avez des précisions à nous faire sur un sujet en particulier (la nourriture par exemple).</p>`,
     secOnsite:`Une fois sur place…`, secOnsiteSub:`le petit plan du domaine`,
     secWeekend:`Le week-end, jour par jour`,
     dayFri:`Vendredi`, daySat:`Samedi`, daySun:`Dimanche`,
     friE1t:`18h – 20h`, friE1d:`Arrivée au domaine, on vous accueille les bras ouverts`,
     friE2t:`Le soir`, friE2d:`Apéro & grand repas tous ensemble, style brasero`,
-    satE1t:`8h30 – 10h30`, satE1d:`Café, petit-déj & jeux : spikeball, pétanque, piscine, tennis ☕🏖️`,
-    satE2t:`Dès 10h30`, satE2d:`Brunch, puis on se prépare ✨`,
-    satE3t:`14h30`, satE3d:`Rendez-vous à l'église de Tournan 💒 <small>(25 min de route 🚗)</small>`,
+    satE1t:`8h30 – 11h`, satE1d:`Café, petit-déj & jeux : spikeball, pétanque, piscine, tennis ☕🏖️`,
+    satE2t:`Dès 11h`, satE2d:`Brunch, puis on se prépare ✨`,
+    satE3t:`14h30`, satE3d:`Rendez-vous à l'église de Tournan 💒 <small>(25 min de route 🚗 → départ du domaine à 14h)</small>`,
     satE4t:`15h`, satE4d:`Messe de mariage ⛪`,
     satE5t:`17h30 – 18h`, satE5d:`Retour au domaine : vin d'honneur → repas → on danse jusqu'au bout de la nuit 🍾💃`,
-    sunE1t:`8h30 – 10h30`, sunE1d:`Café, petit-déj & jeux, on prolonge le plaisir ☕`,
-    sunE2t:`Dès 10h30`, sunE2d:`Brunch`,
+    sunE1t:`8h30 – 11h`, sunE1d:`Café, petit-déj & jeux, on prolonge le plaisir ☕`,
+    sunE2t:`Dès 11h`, sunE2d:`Brunch`,
     sunE3t:`L'après-midi`, sunE3d:`Vous partez quand vous le souhaitez, on commencera à ranger vers 16h :)`,
     secDress:`Dress code`, dressText:`« Venez comme vous êtes, vous êtes magnifiques. » 💛`,
     secAddr:`Les adresses`,
@@ -428,16 +465,17 @@ const T = {
     secCagnotte:`La cagnotte`, secCagnotteSub:`votre présence est déjà le plus beau des cadeaux`,
     cagH3:`Participer à la cagnotte`, cagP:`Pour ceux qui le souhaitent, un petit geste pour nous aider à réaliser notre voyage de noces ✈️`, cagA:`Ouvrir la cagnotte →`,
     secAlbum:`L'album partagé`, secAlbumSub:`vos photos du week-end, toutes au même endroit`,
-    albH3:`Ajouter vos photos`, albP:`Un album commun pour tout rassembler : videz vos téléphones, on veut tout voir !`, albA:`Ouvrir l'album →`,
+    albH3:`Ajouter vos photos, s'il vous plaît`, albP:`Un album commun pour tout rassembler : videz vos téléphones, on veut tout voir ! Aidez-nous à graver ces souvenirs pour toujours 🙏`, albA:`Ouvrir l'album →`,
+    secContact:`Contact`, secContactSub:`une question, un imprévu ? appelez-nous`,
     sign:`À très vite ! Chlochlo & Maxou`,
     svgBrunch:`Brunch`, svgBrunchSub:`Samedi & dimanche`,
     svgVin:`Vin d'honneur`, svgVinSub:`Samedi en soirée`,
     svgRecep:`Réception`, svgRecepSub:`Samedi soir`,
     svgBrasero:`Brasero`, svgBraseroSub:`Vendredi soir`,
     svgParking:`Parking`, svgBanner:`Mariage`,
-    packTitle:`Quoi emporter`, packText:`<p>Votre maillot de bain et une tenue de sport, pour piquer une tête ou taper la balle 🏊🎾</p><p>Mi-août dans le Gers, il peut faire 35 °C l'après-midi et frais à la nuit tombée : chapeau, crème solaire, anti-moustiques et une petite laine. Petit détail, le vin d'honneur et le parking sont sur l'herbe, prévoyez des chaussures adaptées.</p>`,
+    packTitle:`Quoi emporter`, packText:`<p>Votre maillot de bain et une tenue de sport, pour piquer une tête ou taper la balle 🏊🎾</p><p>Mi-août dans le Gers, il peut faire 35 °C l'après-midi et frais à la nuit tombée : chapeau, crème solaire, anti-moustiques et une petite laine.</p>`,
     secRules:`Quelques bonnes mesures`, secRulesSub:`pour que tout se passe bien`,
-    rulesList:`<ul><li><span class="ico">🏊</span><div><b>La piscine</b> : pas d'alcool au bord, et on garde l'accès fermé, c'est plus sûr pour les enfants.<span class="tip">Ouverte le samedi matin et le dimanche matin.</span></div></li><li><span class="ico">🌊</span><div><b>Pas de débordement</b> : ni dans la piscine, ni ailleurs, c'est le plus beau jour de notre vie, on compte sur vous 😇</div></li><li><span class="ico">🧭</span><div><b>Restez dans les parages</b> : le domaine est grand, et on a indiqué sur le plan les endroits où tout se passe. Personne n'a envie d'organiser une battue dans le Gers à 3h du matin.</div></li><li><span class="ico">🚭</span><div><b>Les mégots dans les cendriers</b> : en août l'herbe est sèche comme du foin, et le brasero suffit largement à l'ambiance feu de camp.</div></li><li><span class="ico">👶</span><div><b>Les enfants</b> : ils restent sous l'œil de leurs parents, surtout côté piscine et brasero.</div></li><li><span class="ico">🚗</span><div><b>Le retour</b> : si vous reprenez la route, désignez un capitaine de soirée. Les petites routes du Gers ne sont pas éclairées.</div></li></ul>`,
+    rulesList:`<ul><li><span class="ico">🥳</span><div><b>Bienveillance et bonne humeur</b> : venez le cœur léger et le sourire aux lèvres, allez vers les autres et mélangez-vous, ça va être une belle fête ! C'est le plus beau jour de notre vie et on compte sur vous pour le rendre inoubliable 😇</div></li><li><span class="ico">🏊</span><div><b>La piscine</b> : pas d'alcool au bord, et on garde l'accès fermé, c'est plus sûr pour les enfants.<span class="tip">Ouverte le samedi matin et le dimanche matin.</span></div></li><li><span class="ico">🧭</span><div><b>Restez dans les parages</b> : le domaine est grand, et on a indiqué sur le plan les endroits où tout se passe. Personne n'a envie d'organiser une battue dans le Gers à 3h du matin.</div></li><li><span class="ico">🚭</span><div><b>Les mégots dans les cendriers</b> : en août l'herbe est sèche comme du foin, et le brasero suffit largement à l'ambiance feu de camp.</div></li><li><span class="ico">👶</span><div><b>Les enfants</b> : ils restent sous l'œil de leurs parents, surtout côté piscine et brasero.</div></li><li><span class="ico">🚗</span><div><b>Le retour</b> : si vous reprenez la route, désignez un capitaine de soirée. Les petites routes du Gers ne sont pas éclairées.</div></li></ul>`,
     secTrajet:`Le trajet jusqu'à l'église`, secTrajetSub:`≈ 25 min de route depuis le domaine 🚗`, trajetLink:`Ouvrir l'itinéraire dans Maps →`,
     svgDomaine:`Domaine`, svgEglise:`Église`
   },
@@ -449,13 +487,13 @@ const T = {
     dayFri:`Friday`, daySat:`Saturday`, daySun:`Sunday`,
     friE1t:`6–8pm`, friE1d:`Arrival at the estate, we welcome you with open arms`,
     friE2t:`Evening`, friE2d:`Drinks & a big dinner all together, brasero style`,
-    satE1t:`8:30–10:30am`, satE1d:`Coffee, breakfast & games: spikeball, pétanque, pool, tennis ☕🏖️`,
-    satE2t:`From 10:30am`, satE2d:`Brunch, then time to get ready ✨`,
-    satE3t:`2:30pm`, satE3d:`Meet at the church in Tournan 💒 <small>(25 min drive 🚗)</small>`,
+    satE1t:`8:30–11am`, satE1d:`Coffee, breakfast & games: spikeball, pétanque, pool, tennis ☕🏖️`,
+    satE2t:`From 11am`, satE2d:`Brunch, then time to get ready ✨`,
+    satE3t:`2:30pm`, satE3d:`Meet at the church in Tournan 💒 <small>(25 min drive 🚗 → leave the estate at 2pm)</small>`,
     satE4t:`3pm`, satE4d:`Wedding mass ⛪`,
     satE5t:`5:30–6pm`, satE5d:`Back to the estate: cocktail hour → dinner → dancing till dawn 🍾💃`,
-    sunE1t:`8:30–10:30am`, sunE1d:`Coffee, breakfast & games: let's keep the fun going ☕`,
-    sunE2t:`From 10:30am`, sunE2d:`Brunch`,
+    sunE1t:`8:30–11am`, sunE1d:`Coffee, breakfast & games: let's keep the fun going ☕`,
+    sunE2t:`From 11am`, sunE2d:`Brunch`,
     sunE3t:`Afternoon`, sunE3d:`Leave whenever you like, we'll start tidying up around 4pm :)`,
     secDress:`Dress code`, dressText:`"Come as you are, you look wonderful." 💛`,
     secAddr:`Addresses`,
@@ -464,16 +502,17 @@ const T = {
     secCagnotte:`Honeymoon fund`, secCagnotteSub:`your presence is already the most beautiful gift`,
     cagH3:`Contribute to the fund`, cagP:`For those who wish, a little something to help us go on our honeymoon ✈️`, cagA:`Open the fund →`,
     secAlbum:`The shared album`, secAlbumSub:`all your photos of the weekend in one place`,
-    albH3:`Add your photos`, albP:`One album for everything: empty your phones, we want to see it all!`, albA:`Open the album →`,
+    albH3:`Add your photos, please`, albP:`One album for everything: empty your phones, we want to see it all! Help us keep these memories forever 🙏`, albA:`Open the album →`,
+    secContact:`Contact`, secContactSub:`a question, something unexpected? give us a call`,
     sign:`See you very soon! Chlochlo & Maxou`,
     svgBrunch:`Brunch`, svgBrunchSub:`Saturday & Sunday`,
     svgVin:`Cocktail hour`, svgVinSub:`Saturday evening`,
     svgRecep:`Reception`, svgRecepSub:`Saturday night`,
     svgBrasero:`Brasero`, svgBraseroSub:`Friday evening`,
     svgParking:`Parking`, svgBanner:`Wedding`,
-    packTitle:`What to bring`, packText:`<p>Your swimsuit and some sportswear, for a dip in the pool or a game or two 🏊🎾</p><p>Mid-August in the Gers can mean 35 °C in the afternoon and chilly once the sun goes down: a hat, sunscreen, insect repellent and a light jumper. One last thing, the cocktail hour and the parking are on grass, so pick your shoes accordingly.</p>`,
+    packTitle:`What to bring`, packText:`<p>Your swimsuit and some sportswear, for a dip in the pool or a game or two 🏊🎾</p><p>Mid-August in the Gers can mean 35 °C in the afternoon and chilly once the sun goes down: a hat, sunscreen, insect repellent and a light jumper.</p>`,
     secRules:`A few ground rules`, secRulesSub:`so that everything goes smoothly`,
-    rulesList:`<ul><li><span class="ico">🏊</span><div><b>The pool</b>: no alcohol at the poolside, and please keep the gate closed, as it's safer for the children.<span class="tip">Open on Saturday and Sunday mornings.</span></div></li><li><span class="ico">🌊</span><div><b>Don't overflow</b>: not in the pool, not anywhere else, it's the best day of our lives, we're counting on you 😇</div></li><li><span class="ico">🧭</span><div><b>Stay within reach</b>: the estate is big, and the map shows where everything happens. Nobody fancies organising a search party across the Gers at 3am.</div></li><li><span class="ico">🚭</span><div><b>Cigarette butts in the ashtrays</b>: in August the grass is as dry as hay, and the brasero already provides plenty of campfire atmosphere.</div></li><li><span class="ico">👶</span><div><b>The children</b>: please keep an eye on them, especially around the pool and the brasero.</div></li><li><span class="ico">🚗</span><div><b>Getting home</b>: if you're driving, pick a designated driver. The little roads around here have no street lights.</div></li></ul>`,
+    rulesList:`<ul><li><span class="ico">🥳</span><div><b>Kindness and good cheer</b>: come with a light heart and a big smile, reach out to others and mingle, it's going to be a lovely party! It's the most beautiful day of our lives and we're counting on you to make it unforgettable 😇</div></li><li><span class="ico">🏊</span><div><b>The pool</b>: no alcohol at the poolside, and please keep the gate closed, as it's safer for the children.<span class="tip">Open on Saturday and Sunday mornings.</span></div></li><li><span class="ico">🧭</span><div><b>Stay within reach</b>: the estate is big, and the map shows where everything happens. Nobody fancies organising a search party across the Gers at 3am.</div></li><li><span class="ico">🚭</span><div><b>Cigarette butts in the ashtrays</b>: in August the grass is as dry as hay, and the brasero already provides plenty of campfire atmosphere.</div></li><li><span class="ico">👶</span><div><b>The children</b>: please keep an eye on them, especially around the pool and the brasero.</div></li><li><span class="ico">🚗</span><div><b>Getting home</b>: if you're driving, pick a designated driver. The little roads around here have no street lights.</div></li></ul>`,
     secTrajet:`Getting to the church`, secTrajetSub:`≈ 25 min drive from the estate 🚗`, trajetLink:`Open the route in Maps →`,
     svgDomaine:`Venue`, svgEglise:`Church`
   },
@@ -485,13 +524,13 @@ const T = {
     dayFri:`Viernes`, daySat:`Sábado`, daySun:`Domingo`,
     friE1t:`18–20h`, friE1d:`Llegada a la finca, os recibimos con los brazos abiertos`,
     friE2t:`Por la noche`, friE2d:`Aperitivo y gran cena todos juntos, estilo brasa`,
-    satE1t:`8h30–10h30`, satE1d:`Café, desayuno y juegos: spikeball, petanca, piscina, tenis ☕🏖️`,
-    satE2t:`Desde las 10h30`, satE2d:`Brunch y luego a prepararse ✨`,
-    satE3t:`14h30`, satE3d:`Cita en la iglesia de Tournan 💒 <small>(25 min en coche 🚗)</small>`,
+    satE1t:`8h30–11h`, satE1d:`Café, desayuno y juegos: spikeball, petanca, piscina, tenis ☕🏖️`,
+    satE2t:`Desde las 11h`, satE2d:`Brunch y luego a prepararse ✨`,
+    satE3t:`14h30`, satE3d:`Cita en la iglesia de Tournan 💒 <small>(25 min en coche 🚗 → salida de la finca a las 14h)</small>`,
     satE4t:`15h`, satE4d:`Misa de boda ⛪`,
     satE5t:`17h30–18h`, satE5d:`Vuelta a la finca: vino de honor → cena → baile hasta el amanecer 🍾💃`,
-    sunE1t:`8h30–10h30`, sunE1d:`Café, desayuno y juegos, alargamos el placer ☕`,
-    sunE2t:`Desde las 10h30`, sunE2d:`Brunch`,
+    sunE1t:`8h30–11h`, sunE1d:`Café, desayuno y juegos, alargamos el placer ☕`,
+    sunE2t:`Desde las 11h`, sunE2d:`Brunch`,
     sunE3t:`Por la tarde`, sunE3d:`Os vais cuando queráis, empezaremos a recoger sobre las 16h :)`,
     secDress:`Código de vestimenta`, dressText:`«Venid tal y como sois, estáis magníficos.» 💛`,
     secAddr:`Las direcciones`,
@@ -500,16 +539,17 @@ const T = {
     secCagnotte:`El bote para la luna de miel`, secCagnotteSub:`vuestra presencia ya es el regalo más bonito`,
     cagH3:`Contribuir al bote`, cagP:`Para quien lo desee, un pequeño gesto para ayudarnos a hacer nuestra luna de miel ✈️`, cagA:`Abrir el bote →`,
     secAlbum:`El álbum compartido`, secAlbumSub:`todas vuestras fotos del fin de semana en un mismo sitio`,
-    albH3:`Añadir vuestras fotos`, albP:`Un álbum común para reunirlo todo: vaciad vuestros móviles, ¡queremos verlo todo!`, albA:`Abrir el álbum →`,
+    albH3:`Añadir vuestras fotos, por favor`, albP:`Un álbum común para reunirlo todo: vaciad vuestros móviles, ¡queremos verlo todo! Ayudadnos a guardar estos recuerdos para siempre 🙏`, albA:`Abrir el álbum →`,
+    secContact:`Contacto`, secContactSub:`¿una duda, un imprevisto? llamadnos`,
     sign:`¡Hasta muy pronto! Chlochlo & Maxou`,
     svgBrunch:`Brunch`, svgBrunchSub:`Sábado y domingo`,
     svgVin:`Vino de honor`, svgVinSub:`Sábado por la tarde`,
     svgRecep:`Recepción`, svgRecepSub:`Sábado noche`,
     svgBrasero:`Brasa`, svgBraseroSub:`Viernes noche`,
     svgParking:`Aparcamiento`, svgBanner:`Boda`,
-    packTitle:`Qué traer`, packText:`<p>Vuestro bañador y algo de ropa de deporte, para daros un chapuzón o echar un partido 🏊🎾</p><p>A mediados de agosto en el Gers puede hacer 35 °C por la tarde y fresco al caer la noche: gorro, crema solar, repelente de mosquitos y una chaqueta ligera. Un último detalle, el vino de honor y el aparcamiento son sobre hierba, así que elegid el calzado en consecuencia.</p>`,
+    packTitle:`Qué traer`, packText:`<p>Vuestro bañador y algo de ropa de deporte, para daros un chapuzón o echar un partido 🏊🎾</p><p>A mediados de agosto en el Gers puede hacer 35 °C por la tarde y fresco al caer la noche: gorro, crema solar, repelente de mosquitos y una chaqueta ligera.</p>`,
     secRules:`Algunas buenas medidas`, secRulesSub:`para que todo salga bien`,
-    rulesList:`<ul><li><span class="ico">🏊</span><div><b>La piscina</b>: nada de alcohol en el borde, y mantened el acceso cerrado, es más seguro para los niños.<span class="tip">Abierta el sábado y el domingo por la mañana.</span></div></li><li><span class="ico">🌊</span><div><b>Sin desbordamientos</b>: ni en la piscina ni en ningún otro sitio, es el día más bonito de nuestra vida, contamos con vosotros 😇</div></li><li><span class="ico">🧭</span><div><b>No os alejéis demasiado</b>: la finca es grande y en el plano hemos señalado dónde ocurre todo. Nadie tiene ganas de organizar una batida por el Gers a las 3 de la mañana.</div></li><li><span class="ico">🚭</span><div><b>Las colillas, en los ceniceros</b>: en agosto la hierba está seca como el heno, y la brasa ya da suficiente ambiente de hoguera.</div></li><li><span class="ico">👶</span><div><b>Los niños</b>: que no se alejen de la vista de sus padres, sobre todo cerca de la piscina y de la brasa.</div></li><li><span class="ico">🚗</span><div><b>La vuelta</b>: si conduís, elegid un conductor sobrio. Las carreteras del Gers no tienen alumbrado.</div></li></ul>`,
+    rulesList:`<ul><li><span class="ico">🥳</span><div><b>Amabilidad y buen humor</b>: venid con el corazón ligero y una gran sonrisa, acercaos a los demás y mezclaos, ¡va a ser una fiesta preciosa! Es el día más bonito de nuestra vida y contamos con vosotros para hacerlo inolvidable 😇</div></li><li><span class="ico">🏊</span><div><b>La piscina</b>: nada de alcohol en el borde, y mantened el acceso cerrado, es más seguro para los niños.<span class="tip">Abierta el sábado y el domingo por la mañana.</span></div></li><li><span class="ico">🧭</span><div><b>No os alejéis demasiado</b>: la finca es grande y en el plano hemos señalado dónde ocurre todo. Nadie tiene ganas de organizar una batida por el Gers a las 3 de la mañana.</div></li><li><span class="ico">🚭</span><div><b>Las colillas, en los ceniceros</b>: en agosto la hierba está seca como el heno, y la brasa ya da suficiente ambiente de hoguera.</div></li><li><span class="ico">👶</span><div><b>Los niños</b>: que no se alejen de la vista de sus padres, sobre todo cerca de la piscina y de la brasa.</div></li><li><span class="ico">🚗</span><div><b>La vuelta</b>: si conduís, elegid un conductor sobrio. Las carreteras del Gers no tienen alumbrado.</div></li></ul>`,
     secTrajet:`El trayecto hasta la iglesia`, secTrajetSub:`≈ 25 min en coche desde la finca 🚗`, trajetLink:`Abrir la ruta en Maps →`,
     svgDomaine:`Finca`, svgEglise:`Iglesia`
   },
@@ -521,13 +561,13 @@ const T = {
     dayFri:`Freitag`, daySat:`Samstag`, daySun:`Sonntag`,
     friE1t:`18–20 Uhr`, friE1d:`Ankunft auf dem Anwesen, wir empfangen euch mit offenen Armen`,
     friE2t:`Am Abend`, friE2d:`Aperitif & großes Essen alle zusammen, Brasero-Stil`,
-    satE1t:`8:30–10:30 Uhr`, satE1d:`Kaffee, Frühstück & Spiele: Spikeball, Boule, Pool, Tennis ☕🏖️`,
-    satE2t:`Ab 10:30 Uhr`, satE2d:`Brunch, dann machen wir uns fertig ✨`,
-    satE3t:`14:30 Uhr`, satE3d:`Treffen an der Kirche von Tournan 💒 <small>(25 Min. Fahrt 🚗)</small>`,
+    satE1t:`8:30–11 Uhr`, satE1d:`Kaffee, Frühstück & Spiele: Spikeball, Boule, Pool, Tennis ☕🏖️`,
+    satE2t:`Ab 11 Uhr`, satE2d:`Brunch, dann machen wir uns fertig ✨`,
+    satE3t:`14:30 Uhr`, satE3d:`Treffen an der Kirche von Tournan 💒 <small>(25 Min. Fahrt 🚗 → Abfahrt vom Anwesen um 14 Uhr)</small>`,
     satE4t:`15 Uhr`, satE4d:`Hochzeitsmesse ⛪`,
     satE5t:`17:30–18 Uhr`, satE5d:`Zurück zum Anwesen: Sektempfang → Essen → Tanzen bis in die Nacht 🍾💃`,
-    sunE1t:`8:30–10:30 Uhr`, sunE1d:`Kaffee, Frühstück & Spiele, wir genießen weiter ☕`,
-    sunE2t:`Ab 10:30 Uhr`, sunE2d:`Brunch`,
+    sunE1t:`8:30–11 Uhr`, sunE1d:`Kaffee, Frühstück & Spiele, wir genießen weiter ☕`,
+    sunE2t:`Ab 11 Uhr`, sunE2d:`Brunch`,
     sunE3t:`Am Nachmittag`, sunE3d:`Ihr geht, wann ihr möchtet, wir fangen gegen 16 Uhr mit dem Aufräumen an :)`,
     secDress:`Dresscode`, dressText:`„Kommt, wie ihr seid, ihr seht großartig aus." 💛`,
     secAddr:`Die Adressen`,
@@ -536,16 +576,17 @@ const T = {
     secCagnotte:`Die Flitterwochen-Kasse`, secCagnotteSub:`eure Anwesenheit ist schon das schönste Geschenk`,
     cagH3:`Zur Kasse beitragen`, cagP:`Für alle, die möchten, eine kleine Geste, um uns die Flitterwochen zu ermöglichen ✈️`, cagA:`Zur Kasse →`,
     secAlbum:`Das gemeinsame Album`, secAlbumSub:`alle eure Fotos vom Wochenende an einem Ort`,
-    albH3:`Eure Fotos hinzufügen`, albP:`Ein Album für alles: leert eure Handys, wir wollen alles sehen!`, albA:`Album öffnen →`,
+    albH3:`Eure Fotos hinzufügen, bitte`, albP:`Ein Album für alles: leert eure Handys, wir wollen alles sehen! Helft uns, diese Erinnerungen für immer festzuhalten 🙏`, albA:`Album öffnen →`,
+    secContact:`Kontakt`, secContactSub:`eine Frage, etwas Unvorhergesehenes? ruft uns an`,
     sign:`Bis ganz bald! Chlochlo & Maxou`,
     svgBrunch:`Brunch`, svgBrunchSub:`Samstag & Sonntag`,
     svgVin:`Sektempfang`, svgVinSub:`Samstagabend`,
     svgRecep:`Empfang`, svgRecepSub:`Samstagnacht`,
     svgBrasero:`Brasero`, svgBraseroSub:`Freitagabend`,
     svgParking:`Parken`, svgBanner:`Hochzeit`,
-    packTitle:`Was mitbringen`, packText:`<p>Eure Badesachen und Sportkleidung, zum Schwimmen oder für eine Runde Spiel 🏊🎾</p><p>Mitte August kann es im Gers nachmittags 35 °C warm und nach Sonnenuntergang frisch werden: Hut, Sonnencreme, Mückenspray und eine leichte Jacke. Und noch eine Kleinigkeit, der Sektempfang und der Parkplatz sind auf Wiese, wählt euer Schuhwerk entsprechend.</p>`,
+    packTitle:`Was mitbringen`, packText:`<p>Eure Badesachen und Sportkleidung, zum Schwimmen oder für eine Runde Spiel 🏊🎾</p><p>Mitte August kann es im Gers nachmittags 35 °C warm und nach Sonnenuntergang frisch werden: Hut, Sonnencreme, Mückenspray und eine leichte Jacke.</p>`,
     secRules:`Ein paar gute Regeln`, secRulesSub:`damit alles gut läuft`,
-    rulesList:`<ul><li><span class="ico">🏊</span><div><b>Der Pool</b>: kein Alkohol am Beckenrand, und haltet den Zugang bitte geschlossen, so ist es für die Kinder sicherer.<span class="tip">Geöffnet am Samstag- und Sonntagmorgen.</span></div></li><li><span class="ico">🌊</span><div><b>Nicht über die Stränge schlagen</b>: weder im Pool noch sonst wo, es ist der schönste Tag unseres Lebens, wir zählen auf euch 😇</div></li><li><span class="ico">🧭</span><div><b>Bleibt in der Nähe</b>: das Anwesen ist groß, und auf dem Plan steht, wo alles stattfindet. Niemand hat Lust, um 3 Uhr morgens eine Suchaktion durchs Gers zu starten.</div></li><li><span class="ico">🚭</span><div><b>Zigarettenkippen in die Aschenbecher</b>: im August ist das Gras trocken wie Heu, und der Brasero sorgt schon für genug Lagerfeuerstimmung.</div></li><li><span class="ico">👶</span><div><b>Die Kinder</b>: bitte behaltet sie im Auge, besonders am Pool und am Brasero.</div></li><li><span class="ico">🚗</span><div><b>Die Rückfahrt</b>: wenn ihr fahrt, bestimmt jemanden, der nichts trinkt. Die kleinen Straßen hier haben keine Beleuchtung.</div></li></ul>`,
+    rulesList:`<ul><li><span class="ico">🥳</span><div><b>Herzlichkeit und gute Laune</b>: kommt mit leichtem Herzen und einem Lächeln, geht auf die anderen zu und mischt euch, es wird ein schönes Fest! Es ist der schönste Tag unseres Lebens und wir zählen auf euch, ihn unvergesslich zu machen 😇</div></li><li><span class="ico">🏊</span><div><b>Der Pool</b>: kein Alkohol am Beckenrand, und haltet den Zugang bitte geschlossen, so ist es für die Kinder sicherer.<span class="tip">Geöffnet am Samstag- und Sonntagmorgen.</span></div></li><li><span class="ico">🧭</span><div><b>Bleibt in der Nähe</b>: das Anwesen ist groß, und auf dem Plan steht, wo alles stattfindet. Niemand hat Lust, um 3 Uhr morgens eine Suchaktion durchs Gers zu starten.</div></li><li><span class="ico">🚭</span><div><b>Zigarettenkippen in die Aschenbecher</b>: im August ist das Gras trocken wie Heu, und der Brasero sorgt schon für genug Lagerfeuerstimmung.</div></li><li><span class="ico">👶</span><div><b>Die Kinder</b>: bitte behaltet sie im Auge, besonders am Pool und am Brasero.</div></li><li><span class="ico">🚗</span><div><b>Die Rückfahrt</b>: wenn ihr fahrt, bestimmt jemanden, der nichts trinkt. Die kleinen Straßen hier haben keine Beleuchtung.</div></li></ul>`,
     secTrajet:`Der Weg zur Kirche`, secTrajetSub:`≈ 25 Min. Fahrt vom Anwesen 🚗`, trajetLink:`Route in Maps öffnen →`,
     svgDomaine:`Anwesen`, svgEglise:`Kirche`
   }
